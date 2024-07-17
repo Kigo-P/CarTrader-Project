@@ -1,0 +1,28 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-size: 10px;
+}
+form,input{
+    margin: 5px;
+}
+
+table, thead,tbody tr,th,td{
+    border: 2px solid rgb(71, 65, 57);
+    border-collapse: collapse;
+    padding: 5px;
+    margin-top: 8px;
+}
+
+#table1{
+    float: left;
+    width: 40%
+}
+
+#table2{
+    float: right;
+    width: 55%;
+}
