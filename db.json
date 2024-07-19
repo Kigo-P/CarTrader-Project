@@ -1,0 +1,86 @@
+{
+  "cars": [
+    {
+      "id": "1",
+      "make": "Ford",
+      "model": "Mustang",
+      "engine_no": "C5AE6015E",
+      "image": "https://images.pexels.com/photos/544542/pexels-photo-544542.jpeg",
+      "price": "4,800,000",
+      "description": "red",
+      "status": "",
+      "selling_price": 939383030,
+      "profit": 934583030,
+      "sold": true
+    },
+    {
+      "id": "2",
+      "make": "Range",
+      "model": "Rover",
+      "engine_no": "M52B20TU",
+      "image": "https://images.pexels.com/photos/116675/pexels-photo-116675.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "price": "7,800,000",
+      "description": "White"
+    },
+    {
+      "id": "6718",
+      "make": "Mercede Benz",
+      "model": "E200",
+      "engine_no": "RWKWE4343SJ",
+      "image": "https://images.pexels.com/photos/112460/pexels-photo-112460.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "price": "3,800,000",
+      "description": "Sunroof, grey"
+    },
+    {
+      "id": "e47c",
+      "make": "Mercedes Benz",
+      "model": "Gwagon",
+      "engine_no": "EKD523EMSS",
+      "image": "https://images.pexels.com/photos/1429775/pexels-photo-1429775.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "price": "12,500,000",
+      "description": "Grey, hard body"
+    },
+    {
+      "id": "eaf9",
+      "make": "BMW",
+      "model": "320i",
+      "engine_no": "EWKLJSX",
+      "image": "https://images.pexels.com/photos/100653/pexels-photo-100653.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "price": "900000",
+      "description": "White"
+    },
+    {
+      "id": "6d1d",
+      "make": "Ford",
+      "model": "DN",
+      "engine_no": "WKLXA",
+      "image": "https://images.pexels.com/photos/707046/pexels-photo-707046.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "price": "12345678",
+      "description": "SLC;K"
+    }
+  ],
+  "soldCars": [
+    {
+      "id": "679e",
+      "make": "BMW",
+      "model": "320i",
+      "engine_no": {},
+      "image": "https://images.pexels.com/photos/170811/pexels-photo-170811.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1\",",
+      "price": "1,200,000",
+      "description": "Blue",
+      "engine no": "M52B20TU",
+      "status": "for sale",
+      "selling price": " ",
+      "profit": ""
+    },
+    {
+      "id": "173a",
+      "make": "",
+      "model": "",
+      "engine_no": "",
+      "image": "",
+      "price": "",
+      "description": ""
+    }
+  ]
+}
