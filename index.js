@@ -106,10 +106,6 @@ function viewCars(){
                         const td7 = document.createElement("td")
                         const td8 = document.createElement('td')
                         const td9 = document.createElement('td')
-                        const td10 = document.createElement('td')
-                        const deleteButton = document.createElement("button")
-                        deleteButton.textContent = "delete"
-                        td7.appendChild(deleteButton)  
                         const tr2 = document.getElementById("tr2")  
                         //transfering the data from the divs to the table once the vehicle has been sold
                         td1.textContent = `${car.make}`
@@ -128,12 +124,12 @@ function viewCars(){
                         const sellingPrice = parseInt(sellInput.value)
                         const buyingPrice = parseInt(car.price.split(",").join(""))
                         profit = sellingPrice - buyingPrice
-                        td8.textContent = sellingPrice
+                        td7.textContent = sellingPrice
                         profitArray.push(profit)
                         
-                        td9.textContent = profit
+                        td8.textContent = profit
                     // td10.textContent = ''
-                    td10.textContent = profit
+                    td9.textContent = profit
                      //appending the elements to the tbody and trow
                      tr1.appendChild(td1)
                      tr1.appendChild(td2)
@@ -143,10 +139,9 @@ function viewCars(){
                      tr1.appendChild(td6)
                      tr1.appendChild(td7)
                      tr1.appendChild(td8)
-                     tr1.appendChild(td9)
                      tbody.appendChild(tr1)
                      tbody.appendChild(tr2)
-                     tr2.appendChild(td10)
+                     tr2.appendChild(td9)
                     })
                     let totalProfit = 0
                     function sumOfTotal(){
