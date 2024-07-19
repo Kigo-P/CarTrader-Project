@@ -1,8 +1,11 @@
 document.addEventListener("DOMContentLoaded", ()=>{
     //creating a variable for div
+    
 const displayCars = document.getElementById("displayCars")
+let profitArray = []
 //creating a function that fetches all the cars and puts them in specific divs
 function viewCars(){
+    
     fetch("http://localhost:3000/cars")
         .then(response => response.json())
         .then(dataFromCars =>
@@ -44,6 +47,7 @@ function viewCars(){
          }
         searchCar()
         function displayEachCar(car){
+            
              //creating elements 
              const div1 = document.createElement("div")
              const vmake = document.createElement("p")
@@ -78,6 +82,7 @@ function viewCars(){
             sellInput.type = "number"
             sellInput.id = 'sellInput'
             sellInput.placeholder = "Enter the selling price"
+            sellInput.setAttribute("required", "");
             sold.addEventListener("click",function(event){
                 event.preventDefault()
                 function getInput(){
@@ -109,16 +114,28 @@ function viewCars(){
                     //creating the image that should be appended to the table
                     let image1 = document.createElement('img')
                     image1.src = car.image
-                    image1.style.height = "20vh"
+                    image1.style= "height: 200px; border-radius: 15px;"
                     td4.appendChild(image1)
                     td5.textContent = `${car.price}`
                     td6.textContent = `${car.description}`
+                    // let totalProfit = 0
                     //calculating the profit 
                     const sellingPrice = parseInt(sellInput.value)
                     const buyingPrice = parseInt(car.price.split(",").join(""))
-                    const profit = sellingPrice - buyingPrice
+                    
+                    profit = sellingPrice - buyingPrice
                     td8.textContent = sellingPrice
+                    profitArray.push(profit)
+                    console.log(profitArray)
                     td9.textContent = profit
+                    
+                    // // to calculate the total profit:
+                    // totalProfit += profit
+                    // td10.textContent = ''
+                    // td10.textContent = profit
+
+                    
+
                      //appending the elements to the tbody and trow
                      tr1.appendChild(td1)
                      tr1.appendChild(td2)
@@ -140,6 +157,7 @@ function viewCars(){
                 }
                 getInput()
             div1.appendChild(sellInput)
+            updateServer(car.id,sellingPrice,profit)
             })
             //adding an event listener to the delete button whereby it will remove the image 
             deleteInput.addEventListener("click", function(){
@@ -154,6 +172,31 @@ function viewCars(){
                 })
                 .then(response => response.json())
                 .then(deleteImage => console.log(deleteImage))
+            })
+        }
+        //function to update the profit,selling price to the server
+        function updateServer(carId,sellingPrice,profit){
+            let newServerData ={
+                selling_price : sellingPrice,
+                profit: profit,
+                sold: true
+            }
+            fetch(`http://localhost:3000/soldCars${carId}`,{
+                method: "PATCH",
+                headers: {
+                    "Content-Type": "application/json",
+                    "CAccept": "application/json"
+                },
+                body: JSON.stringify(newServerData)
+            })
+            .then(response => response.json())
+            .then(updateNewData =>{
+                if(updateNewData.ok){
+                    return updateNewData
+                }
+                else{
+                    return "error"
+                }
             })
         }
         
