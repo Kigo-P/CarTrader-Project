@@ -7,34 +7,75 @@
     <title>CarTrader</title>
 </head>
 <body>
-    <h1>Car Trader</h1>
-    <!-- creating a form which the user inputs data -->
-    <div>
-        <form id="form">
-            <label> Vehicle Make:
-                <input type="text" id="make" placeholder="Toyota/Nissan/Ford" required>
-            </label><br>
-            <label> Vehicle Model:
-                <input type="text" id="model" placeholder="Hilux/Patrol/Ranger" required> 
-            </label><br>
-            <label>Engine Number: 
-                <input type="text" id="engineno" placeholder="M52B20TU" required>
-            </label><br>
-            <label>Image of vehicle:
-                <input type="text" id="image" placeholder="link for image" required>
-            </label><br>
-            <label>Price:
-                <input type="text" id="price" required>
-            </label><br>
-            <label>Description:
-                <input type="text" id="description" required>
-            </label><br>
-            <button id="submit" type="submit">Submit</button>
-    </form>
+     
+    <!-- home container -->
+      <nav>
+        <ul class="items">
+            <li><a href="#">Home</a></li>
+            <li><a href="#inventory">Inventory</a></li>
+        </ul>
+    </nav>
+    
+        <!-- header ...tell us what the company is about -->
+        <header>
+            <div class="hero-image">
+                <img src="./erik-mclean-3WAMh1omVAY-unsplash.jpg" alt="" >
+            </div>
+            
+        </header>
+        
+        <!-- creating a h1 -->
+        <h1>Car Trader</h1>
+        <p class="ptext" style="color: white;">Driving Deals, Tracking Thrills: Your Trusted Car Trading Inventory!</p>
+        <h2 class="available"> Available Cars</h2>
+        <p class="ptext">At Car trader, we offer the most effective and simplet way to record your car yard data.
+            Below is a list of the available cars and their unique features:
+        </p>
+        <div id="displayCars">
+                
+        </div>
+            
+            <!-- creating a form which the user inputs data -->
+            <div id="filterLabel">
+                <label>
+                    <input type="text" id="search" required>
+                </label>
+                <button type="button" id="btn">Search</button>
+                <div id="showCar" class="showCar">
+                </div>
+
+            </div>
+            <div>
+                <form id="form">
+                    <label> Vehicle Make:
+                        <input type="text" id="make" placeholder="Toyota/Nissan/Ford" required>
+                    </label><br>
+                    <label> Vehicle Model:
+                        <input type="text" id="model" placeholder="Hilux/Patrol/Ranger" required> 
+                    </label><br>
+                    <label>Engine Number: 
+                        <input type="text" id="engineno" placeholder="M52B20TU" required>
+                    </label><br>
+                    <label>Image of vehicle:
+                        <input type="text" id="image" placeholder="link for image" required>
+                    </label><br>
+                    <label>Price:
+                        <input type="text" id="price" required>
+                    </label><br>
+                    <label>Description:
+                        <input type="text" id="description" required>
+                    </label><br>
+                    <button id="submit" type="submit">Submit</button>
+            </form> 
+           
+            </div> 
+     <!-- end home container -->
+      <!-- introducing the inventory div -->
+    <div id="inventory">
     <!-- Creating a table that the user interacts with. It displays the information input in the form -->
     </div>
-    
-        <table id="table1">
+    <div class="table11">
+            <table id="table1">
             <thead>
                 <tr>
                     <th><strong>Vehicle Make</strong></th>
@@ -43,21 +84,20 @@
                     <th><strong>Image</strong></th>
                     <th><strong>Price</strong></th>
                     <th><strong>Description</strong></th>
-                    <th><strong>Status</strong></th>
+                    <th><strong>Delete</strong></th>   
                     <th><strong>Selling Price</strong></th>
-                    <th><strong>Profit</strong></th>
-
-                    
+                    <th><strong>Profit</strong></th>                  
                 </tr>
             </thead>
             <tbody id="tbody">
+              <tr id="tr2">
+                <td colspan="8"></td>
+              </tr>
             </tbody>
-        </table>
     </div>
 </div>
-    
-
 </div>
-    <script src="./trial11.js"></script>
+</div>
+    <script src="./index.js"></script>
 </body>
 </html>
