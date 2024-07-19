@@ -59,14 +59,16 @@ h1{
 }
 
 #displayCars, #showCar{
-    width: 70%;
+    width: 90%;
     margin: 0 auto;
-    height: 700px;
+    height: auto;
     gap: 30px;
     margin-top: 110px;
     display: flex;
     padding: 5px;
-    flex: wrap;
+    flex-wrap: wrap;
+
+
 }
 
 #displayCars img{
@@ -102,6 +104,7 @@ h1{
     height: 80vh;
     margin-left: 170px;
     padding: 40px;
+    height: auto;
 }
 
 #form input{
@@ -112,9 +115,10 @@ h1{
     outline: none;
     border: none;
     background-color: #ddd;
+    /* margin-left: 500px; */
 }
 #search{
-    
+    margin-top: 100px;
     align-items: center;
     height: 100%;
     width: 100%;
@@ -125,6 +129,8 @@ h1{
     outline: none;
     border: none;
     background-color: #ddd;
+    margin-left: 630px;
+    margin-bottom: -800px;
 }
 #btn ,#submit{
     padding: 10px 20px;
@@ -138,18 +144,36 @@ h1{
     text-transform: capitalize;
 }
 #form label{
-    font-size: 1.1rem;
+    font-size: 1.3rem;
+    /* padding: 500px; */
     
 }
 
-
-
-table, thead,tbody tr,th,td{
+table{
+    width: 90%;
+    margin: 0 auto;
     border: 2px solid rgb(71, 65, 57);
     border-collapse: collapse;
+    margin-bottom: 40px;
+    
+    
+}
+th{
+    height: 70px;
+    
+}
+td{
+    text-align: center;
+    
+    
+}
+
+/* 
+table, thead,tbody tr,th,td{
+    
     padding: 20px;
     margin-top: 100px;
-}
+} */
 thead{
     background-color: teal;
     color: white;
@@ -163,8 +187,9 @@ button {
     padding: 10px;
     
 }
-/* #showCar{
+#showCar{
     margin: 10px;
     height: 200px;
     text-align: center;
-} */
+    height: auto;
+} 
