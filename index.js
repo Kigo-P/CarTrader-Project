@@ -6,7 +6,7 @@ const displayCars = document.getElementById("displayCars")
 //creating a function that fetches all the cars and puts them in specific divs
 function viewCars(){
     
-    fetch("http://localhost:3000/cars")
+    fetch("https://my-json-server.typicode.com/Kigo-P/CarTrader-Project/cars")
         .then(response => response.json())
         .then(dataFromCars =>
             //use of for each iterator method to loop through every car 
@@ -15,7 +15,7 @@ function viewCars(){
         }))
          //to search for the vehicle
          function searchCar(){
-            fetch("http://localhost:3000/cars")
+            fetch("https://my-json-server.typicode.com/Kigo-P/CarTrader-Project/cars")
             .then(response => response.json())
             .then(availableCars => {
                 // creating a variable for the search button and show car
@@ -166,7 +166,7 @@ function viewCars(){
             deleteInput.addEventListener("click", function(){
                 div1.remove()
                 //fetching the car we want to delete from the server
-                fetch(`http://localhost:3000/cars/${car.id}`,{
+                fetch(`https://my-json-server.typicode.com/Kigo-P/CarTrader-Project/cars/${car.id}`,{
                     method: "DELETE",
                     headers: {
                         "Content-Type": "application/json",
@@ -197,7 +197,7 @@ function viewCars(){
                description: description
            }
            //using fetch method to post the car in the soldCars Database
-           fetch(`http://localhost:3000/soldCars/${carId}`, {
+           fetch(`https://my-json-server.typicode.com/Kigo-P/CarTrader-Project/cars/${carId}`, {
                method: "POST",
                headers: {
                    "Content-Type" : "application/json",
@@ -238,7 +238,7 @@ function viewCars(){
             document.getElementById("price").value = ''
             document.getElementById("description").value = ''
             // fetching our data from the input value of the form using Post
-            fetch("http://localhost:3000/cars",{
+            fetch("https://my-json-server.typicode.com/Kigo-P/CarTrader-Project/cars",{
                 method: "POST",
                 headers: {
                     "Content-Type" : "application/json",
