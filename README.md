@@ -18,12 +18,15 @@ The Car Inventory Management System is designed to manage a list of cars, track 
 
 # Usage
 
-    Open the application in your web browser at http://localhost:3000.
+    Open the application in your web browser at https://my-json-server.typicode.com/Kigo-P/CarTrader-Project/cars.
     View the list of cars fetched from the server.
     Use the search bar to find cars by make.
     Click the "sold" button on a car to mark it as sold, enter the selling price, and submit to calculate and display the profit.
     Click the "delete" button to remove a car from the inventory.
     Use the form to add new cars to the inventory.
+
+# link to video
+    <video controls src="./CarTraderProject.mp4" title="CarTrader"></video>
 
 # Contributing
 

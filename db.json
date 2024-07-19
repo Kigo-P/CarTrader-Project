@@ -23,15 +23,6 @@
       "description": "White"
     },
     {
-      "id": "6718",
-      "make": "Mercede Benz",
-      "model": "E200",
-      "engine_no": "RWKWE4343SJ",
-      "image": "https://images.pexels.com/photos/112460/pexels-photo-112460.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "price": "3,800,000",
-      "description": "Sunroof, grey"
-    },
-    {
       "id": "e47c",
       "make": "Mercedes Benz",
       "model": "Gwagon",
@@ -41,15 +32,6 @@
       "description": "Grey, hard body"
     },
     {
-      "id": "eaf9",
-      "make": "BMW",
-      "model": "320i",
-      "engine_no": "EWKLJSX",
-      "image": "https://images.pexels.com/photos/100653/pexels-photo-100653.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "price": "900000",
-      "description": "White"
-    },
-    {
       "id": "6d1d",
       "make": "Ford",
       "model": "DN",
@@ -57,6 +39,15 @@
       "image": "https://images.pexels.com/photos/707046/pexels-photo-707046.jpeg?auto=compress&cs=tinysrgb&w=600",
       "price": "12345678",
       "description": "SLC;K"
+    },
+    {
+      "id": "4657",
+      "make": "Porsche",
+      "model": "Cayene",
+      "engine_no": "WJKNMNWEJKN",
+      "image": "https://images.pexels.com/photos/24454937/pexels-photo-24454937/free-photo-of-porsche.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "price": "6700000",
+      "description": "Blue, sportscar"
     }
   ],
   "soldCars": [
